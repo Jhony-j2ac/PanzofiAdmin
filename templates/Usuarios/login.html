@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block pageTitle %}Ingreso Funcionarios{% endblock pageTitle %}
+{% block pageSubtitle %}Ingresa por favor tus credenciales para administrar los formularios{% endblock pageSubtitle %}
+
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="post">
+                {% csrf_token %}
+                <div class='col-6'>
+                    <div class='form-group'>
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" class="form-control" name="username" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class='form-group'>
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" name="password" />
+                    </div>
+                </div>
+                <div>
+                    <div class='form-group'>
+                        <a href="{% url 'password_reset' %}" class="btn btn-primary">Olvide mi crontraseña</a></label>
+                        <button class="btn btn-success">Ingresar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content%}
