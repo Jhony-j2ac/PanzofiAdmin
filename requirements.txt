@@ -4,9 +4,9 @@ Django==4.2.3
 django-cors-headers==4.2.0
 djangorestframework==3.14.0
 mysql-connector-python==8.0.31
-mysqlclient2.1.1
+mysqlclient==2.1.1
 pip==22.2.2
-protobuf3.20.1
+protobuf==3.20.1
 pytz==2023.3
 setuptools==63.2.0
 sqlparse==0.4.4
