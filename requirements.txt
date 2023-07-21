@@ -1,7 +1,6 @@
 #Este archivo es opcionar para instalar dependencias en vercel, revisar necesarios en VirtualEnv
 asgiref==3.7.2
 Django==4.2.3
-django-cors-headers==4.2.0
 mysql-connector-python==8.0.31
 mysqlclient==2.1.1
 protobuf==3.20.1
