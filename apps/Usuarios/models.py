@@ -13,9 +13,11 @@ class Usuarios( models.Model):
 
     Nombre = models.CharField(max_length=50);
     Apellido = models.TextField(max_length=50);
+    Correo = models.TextField(max_length=50,default='');
     dni = models.BigIntegerField();
     Usuario = models.OneToOneField(User, blank=False, null=True, on_delete=models.PROTECT);
-    Tipo = models.ForeignKey(Tipo, blank = False, null=False, on_delete=models.PROTECT)
+    Tipo = models.ForeignKey(Tipo, blank = False, null=False, on_delete=models.PROTECT);
+    Password = models.CharField(max_length=128, blank = False, null=False,default='' );
 
     def __str__(self):
         return self.Nombre;

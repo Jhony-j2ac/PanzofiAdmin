@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.Usuarios',
+    'apps.Login',
     'corsheaders'
 ]
 
@@ -138,6 +139,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),);
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+LOGIN_URL = 'Login'
+LOGOUT_URL = 'logout'
 
 #LOGIN_REDIRECT_URL = reverse_lazy('adopcion:SolicitudListView');
 #LOGOUT_REDIRECT_URL = reverse_lazy('logout');

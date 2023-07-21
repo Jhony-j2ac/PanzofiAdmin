@@ -2,7 +2,8 @@ from rest_framework import serializers
 
 from apps.Usuarios.models import *
 
-class ReactSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = Usuarios
-        fields = ['Nombre', 'Apellido', "dni", "Tipo", "Usuario"]
+        #fields = ['Nombre', 'Apellido', "dni", "Tipo", "Usuario"]
+        fields = '__all__'
