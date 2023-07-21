@@ -1,5 +1,6 @@
 # build_files.sh 
 #Este archivo fue generado como parte serverless en vercel, aca puedo configurar para instalar dependencias faltantes
+yum install mysql-devel
 pip install -r requirements.txt
 pip3 install Django
 pip3 install djangorestframework
