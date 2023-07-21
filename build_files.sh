@@ -3,6 +3,6 @@
 yum install mysql-devel
 pip install -r requirements.txt
 pip3 install Django
-pip3 install djangorestframework
+pip3 install djangorestframework==3.14.0
 pip3 install django-cors-headers==4.2.0
 yes | python3.9 manage.py collectstatic
