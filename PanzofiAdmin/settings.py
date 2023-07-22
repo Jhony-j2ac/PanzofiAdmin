@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.Usuarios',
     'apps.Login',
+    'apps.Session',
     'corsheaders'
 ]
 
@@ -97,7 +98,10 @@ DATABASES = {
         'USER': 'ubnagqym4btlxyyj',
         'PASSWORD': 'P1yLhZbiBCPruyqX58tK',
         'HOST': 'b642cx8eq65exooekq30-mysql.services.clever-cloud.com',
-        'PORT': '3306'
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET time_zone='-05:00'",
+        },
    }
 }
 
@@ -126,7 +130,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-co'
 
-TIME_ZONE = 'UTC'
+
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
@@ -158,4 +163,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = ['*']
 
 
+SESSION_COOKIE_AGE = 100000
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 

@@ -5,9 +5,7 @@ from rest_framework.views import APIView
 
 from apps.Usuarios.models import *
 
-from rest_framework.response import Response
-from apps.Usuarios.serializer import *
-from rest_framework import status
+
 
 import json
 
