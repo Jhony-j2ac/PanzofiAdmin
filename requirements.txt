@@ -1,5 +1,6 @@
 #Este archivo es opcionar para instalar dependencias en vercel, revisar necesarios en VirtualEnv
 asgiref==3.7.2
+python-dotenv==1.0.0
 Django==4.2.3
 djangorestframework==3.14.0
 django-cors-headers==4.2.0
