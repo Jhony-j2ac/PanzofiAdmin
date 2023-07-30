@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'apps.Session',
 ]
 
+
+ALLOWED_HOSTS = ['*']
 CSRF_COOKIE_SECURE = False 
 CORS_ORIGIN_ALLOW_ALL = True 
 CORS_ALLOW_CREDENTIALS = True
@@ -208,7 +210,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ###own config
 
 #And in your settings.py put
-ALLOWED_HOSTS = ['*']
 
 
 SESSION_COOKIE_AGE = 100000
