@@ -66,6 +66,19 @@ REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES': [
 ]}
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = ['GET', 'OPTIONS', 'PATCH', 'DELETE', 'POST', 'PUT']
+CORS_ALLOW_HEADERS = [
+    'X-CSRF-Token',
+    'X-Requested-With',
+    'Accept',
+    'Accept-Version',
+    'Content-Length',
+    'Content-MD5',
+    'Content-Type',
+    'Date',
+    'X-Api-Version',
+]
 
 ROOT_URLCONF = 'PanzofiAdmin.urls'
 
