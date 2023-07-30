@@ -63,6 +63,8 @@ CORS_ALLOW_HEADERS = [
     'Content-Type',
     'Date',
     'X-Api-Version',
+    'Authorization', 
+    'Content-Type'
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
