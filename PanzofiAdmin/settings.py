@@ -73,7 +73,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',  # for localhost (REACT Default)
     '*'
 ]
-CORS_ORIGIN_WHITELIST = ('http://localhost:300','*')
+CORS_ORIGIN_WHITELIST = ('http://localhost:300','*' )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
