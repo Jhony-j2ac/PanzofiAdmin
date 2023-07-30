@@ -79,6 +79,10 @@ CORS_ALLOW_HEADERS = [
     'Date',
     'X-Api-Version',
 ]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    # Otros dominios permitidos...
+]
 
 ROOT_URLCONF = 'PanzofiAdmin.urls'
 
