@@ -2,6 +2,7 @@
 #Este archivo fue generado como parte serverless en vercel, aca puedo configurar para instalar dependencias faltantes
 yum install mysql-devel
 yum install mariadb mariadb-server mariadb-devel mariadb-libs luarocks lua-devel
+yum install python3-devel mysql-devel
 yum group install "Development Tools"
 pip install -r requirements.txt
 pip3 install Django==4.2.3
