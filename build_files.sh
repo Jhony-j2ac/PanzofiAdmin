@@ -1,15 +1,13 @@
 # build_files.sh 
 #Este archivo fue generado como parte serverless en vercel, aca puedo configurar para instalar dependencias faltantes
-# yum install mysql-devel
-# yum install mariadb mariadb-server mariadb-devel mariadb-libs luarocks lua-devel
-# yum install python3-devel mysql-devel
-yum install python3-devel
+yum install mysql-devel
+yum install mariadb mariadb-server mariadb-devel mariadb-libs luarocks lua-devel
+yum install python3-devel mysql-devel
 yum group install "Development Tools"
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 pip3 install Django==4.2.3
 pip3 install djangorestframework==3.14.0
 pip3 install django-cors-headers==4.2.0
-pip3 install mysqlclient==2.1.1
 mkdir -p /vercel/path0/static
 chmod +rwx /vercel/path0/static
 yes | python3.9 manage.py collectstatic
