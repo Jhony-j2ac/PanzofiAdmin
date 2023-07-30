@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-c9g5@&m!md)xe06-ac4chgax-y1e7@8jx%q+14msf@jn_8f-o1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -81,8 +81,10 @@ CORS_ALLOW_HEADERS = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "*"
     # Otros dominios permitidos...
 ]
+
 
 ROOT_URLCONF = 'PanzofiAdmin.urls'
 
